@@ -1,0 +1,101 @@
+body{
+    background-image:url(./Assets/images/equipo-de-uso-ninja-de-tiro-completo.jpg);
+    background-size: cover;
+    font-family: "Zilla Slab", serif;
+    
+
+}
+
+
+#header{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    background-color: rgba(247, 246, 246, 0.001);
+    box-shadow:5px 5px 20px rgb(9, 9, 9) ;
+    width:300px ;
+    height:60px ;
+    justify-content: center;
+    align-items: center;
+    font-size: 125%;
+    border-radius: 5px;
+    text-shadow: 5px 5px 5px #020202;
+    color: greenyellow;
+    margin-top: 20px;
+    animation:palpitar 3s infinite;
+    
+}
+
+
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 6px;
+}
+
+.characters{
+    display: flex;
+    gap: 40px; /* espacio entre las imágenes */
+    border: 2.5px groove greenyellow;
+    border-radius: 7px;
+    box-shadow: 1px 1px 20px greenyellow;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 200px;
+}
+
+.characters img{
+    display: flex;
+    width: 160px;
+    height: 160px;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 10px;
+    object-fit: contain;
+    transition-duration: 200ms;
+    margin-top: 20px;
+}
+
+
+.characters img:hover{
+     transform: scale(1.5); 
+     transition: 1.5s;
+     box-shadow: none; 
+     height: 300px;
+     
+    
+}
+
+footer{
+    display: flex;
+    color: greenyellow;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 1350px;
+    height: 260px; 
+}
+
+.footer1{
+    width: 150px;
+    text-align: center;
+    height: 20px;
+    display: flex;
+    align-items:center;
+    padding-right: -5px;
+}
+
+p{
+    text-shadow: 3px 3px 10px rgb(169, 234, 57);
+} 
+
+
+@keyframes palpitar{
+    0%{transform: scale(0.8);}
+    50%{transform: scale(1);}
+    100%{transform: scale(0.8);}
+}
